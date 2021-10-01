@@ -25,7 +25,7 @@
     <script type='text/javascript'>
         var initESW = function (gslbBaseURL) {
             embedded_svc.settings.displayHelpButton = true; //Or false
-            embedded_svc.settings.language = 'zh_CN'; //For example, enter 'en' or 'en-US'
+            embedded_svc.settings.language = 'en'; //For example, enter 'en' or 'en-US'
 
             //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
             //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
@@ -44,21 +44,18 @@
 
             embedded_svc.settings.extraPrechatFormDetails = [{
                 "label": "Language",
-                "value": "zh_CN",
+                "value": "en",
                 "displayToAgent": true,
                 "transcriptFields": ["Visitor_Language__c"]
             },
             {
                 "label": "First Name",
-                "displayToAgent": true,
                 "transcriptFields": ["Visitor_FirstName__c"]
             }, {
                 "label": "Last Name",
-                "displayToAgent": true,
                 "transcriptFields": ["Visitor_LastName__c"]
             }, {
                 "label": "Email",
-                "displayToAgent": true,
                 "transcriptFields": ["Visitor_Email__c"]
             }];
 
