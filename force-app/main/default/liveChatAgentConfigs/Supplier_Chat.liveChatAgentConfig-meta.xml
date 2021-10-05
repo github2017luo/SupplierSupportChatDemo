@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatAgentConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <users>
+            <user>akash.avandhe@coupa.com</user>
+            <user>akshay.manchalwar@coupa.com</user>
+            <user>bhagyashree.patil@coupa.com</user>
+            <user>chaitrali.gaikwad@coupa.com</user>
+            <user>ekta.bhattad@coupa.com</user>
+            <user>jyoti.dhaware@coupa.com</user>
+            <user>kevin.ghadge@coupa.com</user>
+            <user>mayuresh.khuspe@coupa.com</user>
+            <user>mrudula.joshi@coupa.com</user>
+            <user>pooja.choudhari@coupa.com</user>
+            <user>prabodhi.pimplekar@coupa.com</user>
+            <user>siddhi.singh@coupa.com</user>
+        </users>
+    </assignments>
+    <enableAgentFileTransfer>true</enableAgentFileTransfer>
+    <enableAgentSneakPeek>true</enableAgentSneakPeek>
+    <enableAssistanceFlag>true</enableAssistanceFlag>
+    <enableAutoAwayOnDecline>false</enableAutoAwayOnDecline>
+    <enableAutoAwayOnPushTimeout>false</enableAutoAwayOnPushTimeout>
+    <enableChatConferencing>false</enableChatConferencing>
+    <enableChatMonitoring>true</enableChatMonitoring>
+    <enableChatTransferToAgent>true</enableChatTransferToAgent>
+    <enableChatTransferToButton>true</enableChatTransferToButton>
+    <enableChatTransferToSkill>true</enableChatTransferToSkill>
+    <enableLogoutSound>true</enableLogoutSound>
+    <enableNotifications>true</enableNotifications>
+    <enableRequestSound>true</enableRequestSound>
+    <enableSneakPeek>true</enableSneakPeek>
+    <enableVisitorBlocking>false</enableVisitorBlocking>
+    <enableWhisperMessage>true</enableWhisperMessage>
+    <label>Supplier Chat</label>
+</LiveChatAgentConfig>

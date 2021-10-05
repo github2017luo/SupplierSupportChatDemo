@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkSkillRouting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isActive>true</isActive>
+    <masterLabel>Chat Transcript Skill Mapping</masterLabel>
+    <relatedEntity>LiveChatTranscript</relatedEntity>
+    <workSkillRoutingAttributes>
+        <field>LiveChatTranscript.Is_Coupa_Advantage_Supplier__c</field>
+        <isAdditionalSkill>true</isAdditionalSkill>
+        <skill>Advantage_Supplier</skill>
+        <skillLevel>0</skillLevel>
+        <skillPriority>0</skillPriority>
+        <value>Yes</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>LiveChatTranscript.Visitor_Language__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>Chinese</skill>
+        <skillLevel>10</skillLevel>
+        <value>zh_CN</value>
+    </workSkillRoutingAttributes>
+    <workSkillRoutingAttributes>
+        <field>LiveChatTranscript.Visitor_Language__c</field>
+        <isAdditionalSkill>false</isAdditionalSkill>
+        <skill>English</skill>
+        <skillLevel>0</skillLevel>
+        <value>en</value>
+    </workSkillRoutingAttributes>
+</WorkSkillRouting>

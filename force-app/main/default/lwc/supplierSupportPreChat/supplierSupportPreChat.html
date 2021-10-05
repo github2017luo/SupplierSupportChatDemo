@@ -1,0 +1,61 @@
+<!--
+  @description       : 
+  @author            : Rohan Gaikwad
+  @last modified on  : 10-04-2021
+  @last modified by  : Rohan Gaikwad
+  Modifications Log 
+  Ver   Date         Author          Modification
+  1.0   03-24-2021   Rohan Gaikwad   Initial Version
+-->
+<template>
+
+    <div class="slds-p-around_medium">
+
+        <div class="slds-grid slds-grid_vertical">
+            <div class="slds-col slds-m-bottom_x-small slds-text-color_default slds-m-bottom_x-large"
+                style="font-size: 14px;">
+                This support service is for technical issues with the Coupa Supplier Portal
+                only. For questions relating to
+                transactions, please contact your customer directly.
+            </div>
+            <div class="slds-col slds-m-bottom_x-large">
+                <div class="slds-grid slds-grid_vertical-align-center slds-grid_align-center slds-gutters">
+                    <template for:each={fields} for:item="field">
+                        <template if:true={field.isTypeInputSplitName}>
+                            <div class="slds-col" key={field.name}>
+                                <lightning-input key={field.name} name={field.name} label={field.label}
+                                    value={field.value} max-length={field.maxLength} required={field.required}>
+                                </lightning-input>
+                            </div>
+                        </template>
+                    </template>
+                </div>
+                <template for:each={fields} for:item="field">
+                    <template if:false={field.isTypeInputSplitName}>
+                        <div key={field.name}>
+                            <lightning-input key={field.name} name={field.name} label={field.label} value={field.value}
+                                max-length={field.maxLength} required={field.required}></lightning-input>
+                        </div>
+                    </template>
+                </template>
+                <!-- <div class="slds-m-bottom_xx-medium"></div> -->
+            </div>
+            <div class="slds-col slds-text-body_small slds-m-top_x-small slds-m-bottom_medium">
+                This chat session will be saved as part of the supplier support request
+                ticket. Continuing with this session
+                will constitute your consent for this action.
+            </div>
+            <div class="slds-col">
+                <lightning-button label={startChatLabel} title={startChatLabel} onclick={handleStartChat}
+                    class="slds-m-left_x-small">
+                </lightning-button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- <template if:true={backgroundImgURL}>
+        <img src={CoupaSupplierPortalLogo} />
+    </template> -->
+</template>

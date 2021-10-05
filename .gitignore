@@ -1,0 +1,4 @@
+.sfdx/**
+.localdevserver/**
+.vim-force.com/**
+node_modules
